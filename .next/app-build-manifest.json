@@ -1,0 +1,75 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-5cfb1b31a6c7db50.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-9e7fd12428968086.js",
+      "static/chunks/main-app-6f5bc960125d8926.js",
+      "static/chunks/app/_not-found/page-7d2beba9a8cd64eb.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-5cfb1b31a6c7db50.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-9e7fd12428968086.js",
+      "static/chunks/main-app-6f5bc960125d8926.js",
+      "static/css/4629d13bffb1c6e5.css",
+      "static/chunks/app/layout-bc2375604f405cd0.js"
+    ],
+    "/robots.txt/route": [
+      "static/chunks/webpack-5cfb1b31a6c7db50.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-9e7fd12428968086.js",
+      "static/chunks/main-app-6f5bc960125d8926.js",
+      "static/chunks/app/robots.txt/route-70691391999c3135.js"
+    ],
+    "/sitemap.xml/route": [
+      "static/chunks/webpack-5cfb1b31a6c7db50.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-9e7fd12428968086.js",
+      "static/chunks/main-app-6f5bc960125d8926.js",
+      "static/chunks/app/sitemap.xml/route-70691391999c3135.js"
+    ],
+    "/goonghap/page": [
+      "static/chunks/webpack-5cfb1b31a6c7db50.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-9e7fd12428968086.js",
+      "static/chunks/main-app-6f5bc960125d8926.js",
+      "static/chunks/app/goonghap/page-9bc809134badb42d.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-5cfb1b31a6c7db50.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-9e7fd12428968086.js",
+      "static/chunks/main-app-6f5bc960125d8926.js",
+      "static/chunks/app/page-7cf4bf8d78eba0c1.js"
+    ],
+    "/tarot/page": [
+      "static/chunks/webpack-5cfb1b31a6c7db50.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-9e7fd12428968086.js",
+      "static/chunks/main-app-6f5bc960125d8926.js",
+      "static/chunks/app/tarot/page-f55bda9148d8c6fc.js"
+    ],
+    "/api/fortune/route": [
+      "static/chunks/webpack-5cfb1b31a6c7db50.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-9e7fd12428968086.js",
+      "static/chunks/main-app-6f5bc960125d8926.js",
+      "static/chunks/app/api/fortune/route-70691391999c3135.js"
+    ],
+    "/api/tarot/route": [
+      "static/chunks/webpack-5cfb1b31a6c7db50.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-9e7fd12428968086.js",
+      "static/chunks/main-app-6f5bc960125d8926.js",
+      "static/chunks/app/api/tarot/route-70691391999c3135.js"
+    ],
+    "/fortune/[category]/page": [
+      "static/chunks/webpack-5cfb1b31a6c7db50.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-9e7fd12428968086.js",
+      "static/chunks/main-app-6f5bc960125d8926.js",
+      "static/chunks/app/fortune/[category]/page-07a5e7c4d108e449.js"
+    ]
+  }
+}

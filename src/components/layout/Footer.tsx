@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -9,8 +9,8 @@ export default function Footer() {
           본 서비스는 오락 목적으로 제공되며 실제 미래를 예측하지 않습니다.
         </p>
         <div className="flex space-x-4 text-[13px] opacity-80">
-          <Link to="/terms" className="hover:underline">이용약관</Link>
-          <Link to="/privacy" className="hover:underline">개인정보처리방침</Link>
+          <Link href="/terms" className="hover:underline">이용약관</Link>
+          <Link href="/privacy" className="hover:underline">개인정보처리방침</Link>
         </div>
       </div>
     </footer>

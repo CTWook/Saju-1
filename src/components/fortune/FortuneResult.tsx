@@ -1,6 +1,8 @@
+"use client";
+
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { FortuneData } from '../../types';
+import { useRouter } from 'next/navigation';
+import type { FortuneData } from '../../types';
 import AdBanner from '../layout/AdBanner';
 import { CATEGORIES } from '../../lib/categories';
 
@@ -26,14 +28,14 @@ const StarRating: React.FC<{ score: number }> = ({ score }) => {
 };
 
 const FortuneResult: React.FC<FortuneResultProps> = ({ category, year, month, day, data }) => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const categoryData = CATEGORIES.find((c) => c.slug === category) || CATEGORIES[0];
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-6">
       {/* 1. Page header */}
       <header className="flex items-center justify-between mb-6">
-        <button onClick={() => navigate(-1)} className="text-2xl">←</button>
+        <button onClick={() => router.back()} className="text-2xl">←</button>
         <h1 className="text-lg font-bold text-[#2D1B69]">{categoryData.label} 운세</h1>
         <div className="bg-[#EEEDFE] text-[#534AB7] text-[12px] px-3 py-1 rounded-full font-medium">
           {year}년 {month}월 {day}일생
@@ -87,7 +89,7 @@ const FortuneResult: React.FC<FortuneResultProps> = ({ category, year, month, da
             ))}
           </section>
 
-          {/* 7. MonthlyAccordion (Placeholder for now) */}
+          {/* 7. MonthlyAccordion */}
           <section className="mt-8">
             <h3 className="text-[#2D1B69] text-lg font-bold mb-4">월별 운세</h3>
             <div className="border border-[#E5E5EE] rounded-xl overflow-hidden">
@@ -123,7 +125,7 @@ const FortuneResult: React.FC<FortuneResultProps> = ({ category, year, month, da
               {CATEGORIES.filter(c => c.slug !== category).map((cat) => (
                 <div
                   key={cat.slug}
-                  onClick={() => navigate(`${cat.href}?year=${year}&month=${month}&day=${day}`)}
+                  onClick={() => router.push(`${cat.href}?year=${year}&month=${month}&day=${day}`)}
                   className="min-w-[130px] bg-white border border-[#E5E5EE] rounded-xl p-3 flex flex-col items-center text-center cursor-pointer hover:shadow-md transition-shadow"
                 >
                   <div className="w-10 h-10 rounded-full flex items-center justify-center text-xl mb-2" style={{ backgroundColor: cat.color }}>

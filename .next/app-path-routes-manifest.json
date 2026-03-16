@@ -1,0 +1,11 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/goonghap/page": "/goonghap",
+  "/page": "/",
+  "/tarot/page": "/tarot",
+  "/api/fortune/route": "/api/fortune",
+  "/api/tarot/route": "/api/tarot",
+  "/fortune/[category]/page": "/fortune/[category]"
+}

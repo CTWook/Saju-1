@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
-import InputForm from '@/components/goonghap/InputForm';
-import CompatResult from '@/components/goonghap/CompatResult';
+import { useState } from 'react';
+import InputForm from '../../components/goonghap/InputForm';
+import CompatResult from '../../components/goonghap/CompatResult';
 
 export default function GoonghapPage() {
-  const [result, setResult] = useState<any>(null); // Still using any here for simplicity with mock data, but fixed others
+  const [result, setResult] = useState<any>(null);
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (user1: { year: string, month: string, day: string, gender: string }, user2: { year: string, month: string, day: string, gender: string }) => {

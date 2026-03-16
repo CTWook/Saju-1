@@ -1,16 +1,18 @@
+"use client";
+
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 
 const HeroSection: React.FC = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const [year, setYear] = useState('1990');
   const [month, setMonth] = useState('1');
   const [day, setDay] = useState('1');
   const [hour, setHour] = useState('');
 
-  const years = Array.from({ length: 71 }, (_, i) => 1940 + i);
-  const months = Array.from({ length: 12 }, (_, i) => i + 1);
-  const days = Array.from({ length: 31 }, (_, i) => i + 1);
+  const years = Array.from({ length: 71 }, (_, idx) => 1940 + idx);
+  const months = Array.from({ length: 12 }, (_, idx) => idx + 1);
+  const days = Array.from({ length: 31 }, (_, idx) => idx + 1);
   const hours = [
     { value: '', label: '시간 모름' },
     { value: '00', label: '자시 (23~01시)' },
@@ -44,7 +46,7 @@ const HeroSection: React.FC = () => {
       day,
       hour,
     });
-    navigate(`/fortune/yearly?${queryParams.toString()}`);
+    router.push(`/fortune/yearly?${queryParams.toString()}`);
   };
 
   return (
@@ -65,7 +67,7 @@ const HeroSection: React.FC = () => {
               className="bg-white/12 border border-white/25 text-white h-[42px] rounded-lg px-2 outline-none focus:border-white/50"
             >
               {years.map((y) => (
-                <option key={y} value={y} className="text-black">{y}년</option>
+                <option key={y} value={y.toString()} className="text-black">{y}년</option>
               ))}
             </select>
             <select
@@ -74,7 +76,7 @@ const HeroSection: React.FC = () => {
               className="bg-white/12 border border-white/25 text-white h-[42px] rounded-lg px-2 outline-none focus:border-white/50"
             >
               {months.map((m) => (
-                <option key={m} value={m} className="text-black">{m}월</option>
+                <option key={m} value={m.toString()} className="text-black">{m}월</option>
               ))}
             </select>
             <select
@@ -83,7 +85,7 @@ const HeroSection: React.FC = () => {
               className="bg-white/12 border border-white/25 text-white h-[42px] rounded-lg px-2 outline-none focus:border-white/50"
             >
               {days.map((d) => (
-                <option key={d} value={d} className="text-black">{d}일</option>
+                <option key={d} value={d.toString()} className="text-black">{d}일</option>
               ))}
             </select>
           </div>

@@ -2,16 +2,11 @@ import React from 'react';
 
 const PopularList: React.FC = () => {
   const popularItems = [
-    { id: 1, title: '2026년 대운의 흐름
-운명의 변화를 읽다', views: '45,201', color: '#FAEEDA', icon: '★' },
-    { id: 2, title: '올해 연애운 집중 분석
-인연의 시작과 끝', views: '38,124', color: '#FBEAF0', icon: '♡' },
-    { id: 3, title: '재물운의 타이밍
-황금빛 기운의 도래', views: '29,450', color: '#E1F5EE', icon: '◉' },
-    { id: 4, title: '직장운과 승진운
-커리어 도약의 기회', views: '21,059', color: '#E6F1FB', icon: '▲' },
-    { id: 5, title: '학업운과 시험운
-최고의 결과는 언제?', views: '15,672', color: '#F1EFE8', icon: '✦' },
+    { id: 1, title: '2026년 대운의 흐름 운명의 변화를 읽다', views: '45,201', color: '#FAEEDA', icon: '★' },
+    { id: 2, title: '올해 연애운 집중 분석 인연의 시작과 끝', views: '38,124', color: '#FBEAF0', icon: '♡' },
+    { id: 3, title: '재물운의 타이밍 황금빛 기운의 도래', views: '29,450', color: '#E1F5EE', icon: '◉' },
+    { id: 4, title: '직장운과 승진운 커리어 도약의 기회', views: '21,059', color: '#E6F1FB', icon: '▲' },
+    { id: 5, title: '학업운과 시험운 최고의 결과는 언제?', views: '15,672', color: '#F1EFE8', icon: '✦' },
   ];
 
   return (

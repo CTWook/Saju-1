@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
-import CardSpread from '@/components/tarot/CardSpread';
-import CardResult from '@/components/tarot/CardResult';
-import { TarotResult } from '@/types';
-import AdBanner from '@/components/layout/AdBanner';
+import { useState } from 'react';
+import CardSpread from '../../components/tarot/CardSpread';
+import CardResult from '../../components/tarot/CardResult';
+import type { TarotResult } from '../../types';
+import AdBanner from '../../components/layout/AdBanner';
 
 export default function TarotPage() {
   const [selectedCard, setSelectedCard] = useState<number | null>(null);

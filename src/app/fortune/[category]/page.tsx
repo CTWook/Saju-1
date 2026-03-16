@@ -1,17 +1,20 @@
 import { notFound, redirect } from 'next/navigation';
-import { Metadata } from 'next';
-import { CATEGORIES } from '@/lib/categories';
-import FortuneResult from '@/components/fortune/FortuneResult';
+import type { Metadata } from 'next';
+import { CATEGORIES } from '../../../lib/categories';
+import type { Category } from '../../../lib/categories';
+import FortuneResult from '../../../components/fortune/FortuneResult';
 
 interface Props {
   params: Promise<{ category: string }>;
   searchParams: Promise<{ year: string; month: string; day: string; hour?: string }>;
 }
 
+export const runtime = 'edge';
+
 export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const { category } = await params;
   const { year, month, day } = await searchParams;
-  const categoryData = CATEGORIES.find(c => c.slug === category);
+  const categoryData = CATEGORIES.find((c: Category) => c.slug === category);
   
   if (!categoryData) return {};
   
@@ -29,7 +32,7 @@ export default async function FortuneCategoryPage({ params, searchParams }: Prop
   const { category } = await params;
   const { year, month, day, hour } = await searchParams;
   
-  const categoryData = CATEGORIES.find(c => c.slug === category);
+  const categoryData = CATEGORIES.find((c: Category) => c.slug === category);
   if (!categoryData) notFound();
   
   if (!year || !month || !day) redirect('/');

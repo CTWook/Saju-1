@@ -1,9 +1,11 @@
+"use client";
+
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import { CATEGORIES } from '../../lib/categories';
 
 const CategoryGrid: React.FC = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <div className="py-5">
@@ -19,7 +21,7 @@ const CategoryGrid: React.FC = () => {
                   category: category.slug,
                 });
               }
-              navigate(category.href);
+              router.push(category.href);
             }}
             className="relative bg-white border border-[#E5E5EE] rounded-xl p-[14px] flex flex-row items-center gap-3 cursor-pointer transition-all hover:scale-[1.02] hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)]"
           >

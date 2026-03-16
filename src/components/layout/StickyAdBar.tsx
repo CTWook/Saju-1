@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from 'react';
 import AdBanner from './AdBanner';
 import { X } from 'lucide-react';

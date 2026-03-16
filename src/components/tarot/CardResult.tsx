@@ -1,8 +1,10 @@
+"use client";
+
 import React from 'react';
-import { TarotResult } from '../../types';
+import type { TarotResult } from '../../types';
 import { TAROT_CARDS } from '../../lib/tarotCards';
 import AdBanner from '../layout/AdBanner';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 
 interface CardResultProps {
   cardIndex: number;
@@ -12,7 +14,7 @@ interface CardResultProps {
 }
 
 const CardResult: React.FC<CardResultProps> = ({ cardIndex, orientation, result, onReset }) => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const card = TAROT_CARDS[cardIndex];
 
   return (
@@ -61,7 +63,7 @@ const CardResult: React.FC<CardResultProps> = ({ cardIndex, orientation, result,
             다시 뽑기
           </button>
           <button
-            onClick={() => navigate('/')}
+            onClick={() => router.push('/')}
             className="h-12 bg-[#2D1B69] text-white rounded-xl font-medium"
           >
             내 사주와 함께 보기 →

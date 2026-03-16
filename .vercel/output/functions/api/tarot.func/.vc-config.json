@@ -1,0 +1,18 @@
+{
+  "runtime": "edge",
+  "name": "api/tarot",
+  "deploymentTarget": "v8-worker",
+  "entrypoint": "index.js",
+  "assets": [],
+  "framework": {
+    "slug": "nextjs",
+    "version": "15.4.11"
+  },
+  "environment": {
+    "__NEXT_BUILD_ID": "c4yr2Xiq0aJHaAuyfY2Vo",
+    "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "Cj22wRSRZ+9fiYiCg0WKZlQcnoUTLTYYBwHHdt5zHJI=",
+    "__NEXT_PREVIEW_MODE_ID": "5712b1d0522747e5d09724adc0f238ca",
+    "__NEXT_PREVIEW_MODE_SIGNING_KEY": "f71665f0f2f9fdcc8d58203d4cc16e10103c11ee17acdb686fcb3c252e779dc6",
+    "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "c0eb1ca95d954476a2ae039c663661f9d85227c1768cf153024bedbe538dca72"
+  }
+}

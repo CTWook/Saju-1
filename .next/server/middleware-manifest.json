@@ -1,0 +1,99 @@
+{
+  "version": 3,
+  "middleware": {},
+  "functions": {
+    "/api/fortune/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/fortune/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/edge-chunks/75.js",
+        "server/edge-chunks/936.js",
+        "server/app/api/fortune/route.js"
+      ],
+      "name": "app/api/fortune/route",
+      "page": "/api/fortune/route",
+      "matchers": [
+        {
+          "regexp": "^/api/fortune$",
+          "originalSource": "/api/fortune"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "c4yr2Xiq0aJHaAuyfY2Vo",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "Cj22wRSRZ+9fiYiCg0WKZlQcnoUTLTYYBwHHdt5zHJI=",
+        "__NEXT_PREVIEW_MODE_ID": "5712b1d0522747e5d09724adc0f238ca",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "f71665f0f2f9fdcc8d58203d4cc16e10103c11ee17acdb686fcb3c252e779dc6",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "c0eb1ca95d954476a2ae039c663661f9d85227c1768cf153024bedbe538dca72"
+      }
+    },
+    "/api/tarot/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/tarot/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/edge-chunks/75.js",
+        "server/edge-chunks/936.js",
+        "server/app/api/tarot/route.js"
+      ],
+      "name": "app/api/tarot/route",
+      "page": "/api/tarot/route",
+      "matchers": [
+        {
+          "regexp": "^/api/tarot$",
+          "originalSource": "/api/tarot"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "c4yr2Xiq0aJHaAuyfY2Vo",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "Cj22wRSRZ+9fiYiCg0WKZlQcnoUTLTYYBwHHdt5zHJI=",
+        "__NEXT_PREVIEW_MODE_ID": "5712b1d0522747e5d09724adc0f238ca",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "f71665f0f2f9fdcc8d58203d4cc16e10103c11ee17acdb686fcb3c252e779dc6",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "c0eb1ca95d954476a2ae039c663661f9d85227c1768cf153024bedbe538dca72"
+      }
+    },
+    "/fortune/[category]/page": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/fortune/[category]/page_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/edge-chunks/75.js",
+        "server/app/fortune/[category]/page.js"
+      ],
+      "name": "app/fortune/[category]/page",
+      "page": "/fortune/[category]/page",
+      "matchers": [
+        {
+          "regexp": "^/fortune/(?<category>[^/]+?)$",
+          "originalSource": "/fortune/[category]"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "c4yr2Xiq0aJHaAuyfY2Vo",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "Cj22wRSRZ+9fiYiCg0WKZlQcnoUTLTYYBwHHdt5zHJI=",
+        "__NEXT_PREVIEW_MODE_ID": "5712b1d0522747e5d09724adc0f238ca",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "f71665f0f2f9fdcc8d58203d4cc16e10103c11ee17acdb686fcb3c252e779dc6",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "c0eb1ca95d954476a2ae039c663661f9d85227c1768cf153024bedbe538dca72"
+      }
+    }
+  },
+  "sortedMiddleware": []
+}

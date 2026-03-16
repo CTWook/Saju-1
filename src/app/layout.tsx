@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Layout from "@/components/layout/Layout";
+import Layout from "../components/layout/Layout";
 
 export const metadata: Metadata = {
   title: "오늘의 사주 | AI 무료 운세 풀이",

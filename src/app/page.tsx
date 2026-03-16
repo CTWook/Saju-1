@@ -1,7 +1,7 @@
-import HeroSection from '@/components/home/HeroSection';
-import CategoryGrid from '@/components/home/CategoryGrid';
-import PopularList from '@/components/home/PopularList';
-import AdBanner from '@/components/layout/AdBanner';
+import HeroSection from '../components/home/HeroSection';
+import CategoryGrid from '../components/home/CategoryGrid';
+import PopularList from '../components/home/PopularList';
+import AdBanner from '../components/layout/AdBanner';
 
 export default function Home() {
   return (
